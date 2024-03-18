@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<title> 
+		Form validation using HTML 
+		and JavaScript 
+	</title> 
+	<style> 
+		div { 
+			box-sizing: border-box; 
+			width: 100%; 
+			border: 100px solid #a52020; 
+			float: left; 
+			align-content: center; 
+			align-items: center; 
+		} 
+
+		form { 
+			margin: 0 auto; 
+			width: 600px; 
+		} 
+	</style> 
+</head> 
+
+<body> 
+	<h1 style="text-align: center;"> 
+		REGISTRATION FORM 
+	</h1> 
+	<form name="RegForm"
+		onsubmit="return PolipalliRajesh()"> 
+		<p> 
+			Name: 
+			<input type="text" size="65"
+				name="Name"
+				placeholder="PolipalliRajesh"/> 
+		</p> 
+		<br /> 
+		<p> 
+			Address: 
+			<input type="text" size="65"
+				name="Address"
+				placeholder="Chennai Tamilnadu"/> 
+		</p> 
+		<br /> 
+		<p> 
+			E-mail Address: 
+			<input type="text" size="65"
+				name="EMail"
+				placeholder="polipallirajesh10@gmail.com"/> 
+		</p> 
+		<br /> 
+		<p> 
+			Password: 
+			<input type="password" size="65"
+				name="Rajesh" /> 
+		</p> 
+		<br /> 
+		<br /> 
+		<p> 
+			Select Your Course: 
+			<select value="" name="Subject"> 
+				<option>Select Course</option> 
+				<option>BTECH</option> 
+				<option>BBA</option> 
+				<option>BCA</option> 
+				<option>B.COM</option> 
+			</select> 
+		</p> 
+		<br /> 
+		<br /> 
+		<p> 
+			Comments: 
+			<textarea cols="55" name="Comment"> </textarea> 
+		</p> 
+		<p> 
+			<input type="submit" value="Send"
+				name="Submit" /> 
+			<input type="reset" value="Reset"
+				name="Reset" /> 
+		</p> 
+	</form> 
+	<script src="script.js"></script> 
+</body> 
+
+</html>
